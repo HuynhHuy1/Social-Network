@@ -1,3 +1,5 @@
+// 
+
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
@@ -5,7 +7,14 @@ module.exports = {
     "./src/**/*.{vue,js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        customBlue: 'rgba(97, 94, 240, 0.1)'
+      },
+      height: {
+        customHeight: '10%'
+      }
+    },
   },
   plugins: [],
 }

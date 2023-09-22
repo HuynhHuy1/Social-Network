@@ -1,6 +1,6 @@
 <template lang="">
   <div class=" w-1/3 h-screen p-4 border-r">
-    <header class="flex justify-between w-full pb-5 pt-5 border-b border-gray-400">
+    <header class="flex justify-between w-full pb-5 pt-5 border-b border-gray-400 sticky top-0">
       <div class="flex items-center">
         <p class="mr-2 text-xl font-semibold">Message</p>
         <DownOutlined />

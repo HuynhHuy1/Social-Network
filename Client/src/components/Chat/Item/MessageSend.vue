@@ -13,7 +13,6 @@ import { PaperClipOutlined } from '@ant-design/icons-vue';
 import { SendOutlined } from '@ant-design/icons-vue';
 
 
-
 export default {
   components: {
     PaperClipOutlined,
