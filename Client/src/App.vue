@@ -1,7 +1,9 @@
 <template>
-  <div class="flex flex-row-reverse" >
+  <div class="flex flex-row-reverse relative justify-center items-center" >
     <ChatContent/>
     <UsersChat/>
+
+
   </div>
 </template>
 
@@ -12,7 +14,7 @@ import UsersChat from './components/Chat/UsersChat.vue';
 export default {
   components: {
     ChatContent,
-    UsersChat
+    UsersChat,
   }
 }
 </script>

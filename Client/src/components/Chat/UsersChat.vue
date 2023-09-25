@@ -1,13 +1,15 @@
 <template lang="">
-  <div class=" w-1/3 h-screen p-4 border-r">
-    <header class="flex justify-between w-full pb-5 pt-5 border-b border-gray-400 sticky top-0">
+  <div class=" w-1/3 h-screen p-4 border-r overflow-y-scroll">
+    <header class="flex justify-between w-full pb-5 pt-5 border-b border-gray-400 sticky top-0 z-50">
       <div class="flex items-center">
         <p class="mr-2 text-xl font-semibold">Message</p>
         <DownOutlined />
       </div>
    
-      <div class="w-10 h-10 bg-blue-700 rounded-3xl flex items-center justify-center cursor-pointer">
-        <PlusOutlined class="text-slate-50 text-2xl relative -top-0.5"/>
+      <div class="w-10 h-10 bg-blue-700 rounded-3xl flex items-center justify-center cursor-pointer"
+        @click="showModal()"
+      >
+        <PlusOutlined class="text-slate-300 text-2xl relative -top-0.5"/>
       </div>
     </header>
 
@@ -21,22 +23,41 @@
         <Users/><br>
         <Users /><br>
         <Users/><br>
+        <Users /><br>
+        <Users /><br>
+        <Users /><br>
+        <Users /><br>
         <Users />
       </div>
     </div>
   </div>
+  <AddUserModal v-if="isModalOpen" @cancel="showModal()" />
 </template>
 
 <script>
 import { DownOutlined } from '@ant-design/icons-vue';
 import { PlusOutlined } from '@ant-design/icons-vue';
 import Users from './Item/Users.vue';
+import AddUserModal from '../modal/AddUserModal.vue';
 
 export default {
   components: {
     DownOutlined,
     PlusOutlined,
     Users,
+    AddUserModal
+  },
+
+  data() {
+    return {
+      isModalOpen: false
+    }
+  },
+
+  methods: {
+    showModal() {
+      this.isModalOpen = !this.isModalOpen
+    }
   }
 }
 </script>
