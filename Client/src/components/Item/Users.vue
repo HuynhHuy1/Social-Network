@@ -2,7 +2,7 @@
 <template lang="">        
   <div class="flex">
     <div class="w-16 h-12 mr-6">
-      <img class="rounded-lg" src="../../../assets/image/user.png" alt="">
+      <img class="rounded-lg" src="../../assets/image/user.png" alt="">
     </div>
     <div class="w-full">
       <div class="flex justify-between">

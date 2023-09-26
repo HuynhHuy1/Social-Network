@@ -48,8 +48,8 @@
 <script>
 import { DownOutlined } from "@ant-design/icons-vue";
 import { PlusOutlined } from "@ant-design/icons-vue";
-import Users from "./Item/Users.vue";
-import AddUserModal from "../modal/AddUserModal.vue";
+import Users from "../../components/Item/Users.vue";
+import AddUserModal from "../../components/modal/AddUserModal.vue";
 
 export default {
   components: {

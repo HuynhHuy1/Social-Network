@@ -1,22 +1,16 @@
 <template>
-  <div class="flex flex-row-reverse relative justify-center items-center">
-    <ChatContent/>
-    <UsersChat/>
+  <div>
+    <HomeComponent/>
+    <router-view/>
   </div>
 </template>
 
 <script>
-import ChatContent from './components/Chat/ChatContent.vue';
-import UsersChat from './components/Chat/UsersChat.vue';
+import HomeComponent from './components/HomeComponent.vue';
 
 export default {
   components: {
-    ChatContent,
-    UsersChat,
+    HomeComponent
   }
 }
 </script>
-
-<style>
-
-</style>

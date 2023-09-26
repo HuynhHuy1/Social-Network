@@ -33,8 +33,8 @@
 
 <script>
 import { PhoneFilled } from '@ant-design/icons-vue';
-import MessageSend from './Item/MessageSend.vue';
-import MessageItem from './Item/MessageItem.vue'
+import MessageSend from "../../components/Item/MessageSend.vue";
+import MessageItem from '../../components/Item/MessageItem.vue'
 
 export default {
   components: {
