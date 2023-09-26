@@ -1,9 +1,7 @@
 <template>
-  <div class="flex flex-row-reverse relative justify-center items-center" >
+  <div class="flex flex-row-reverse relative justify-center items-center">
     <ChatContent/>
     <UsersChat/>
-
-
   </div>
 </template>
 

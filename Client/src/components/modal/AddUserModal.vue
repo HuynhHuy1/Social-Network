@@ -1,7 +1,5 @@
 <template lang="">
-  <div class="w-full h-full fixed flex z-50 justify-center items-center modal-backround"
-  
-  >
+  <div class="w-full h-full fixed flex z-50 justify-center items-center modal-backround">
     <div class="modal-page absolute bg-white modal-shadow rounded-2xl p-4 custom-transition">
       <!-- header -->
       <div class="flex justify-between w-full">
@@ -21,7 +19,7 @@
           type="text"
           placeholder="Your Name"
           class="outline-slate-200 h-11 w-full p-2 text-black"
-          :class="{ inputText: inputData }"
+          v-model="inputData"
         />
       </div>
       <!-- footer -->
@@ -34,7 +32,7 @@
         </div>
         <div
           class="w-40 h-11 flex justify-center items-center bg-[#4f4f4f] rounded-lg text-white cursor-pointer"
-          @click="submitButton()"
+          @click="showDataInput()"
         >
           OK
         </div>
@@ -53,7 +51,7 @@ export default {
 
   data() {
     return {
-      inputData: false
+      inputData: ''
     }
   },
 
@@ -62,8 +60,8 @@ export default {
       this.$emit('cancel')
     },
 
-    submitButton() {
-      console.log("create new user");
+    showDataInput() {
+      console.log(this.inputData);
       this.onCloseModal()
     }
   }
