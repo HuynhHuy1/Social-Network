@@ -1,5 +1,5 @@
-<template lang="">
-  <div>
+<template>
+  <div class="flex ">
     <UsersChat />
     <ChatContent />
   </div>
@@ -10,8 +10,10 @@ import UsersChat from '../views/Chat/UsersChat.vue';
 import ChatContent from '../views/Chat/ChatContent.vue';
 
 export default {
-  UsersChat,
-  ChatContent
+  components: {
+    UsersChat,
+    ChatContent
+  }
 }
 </script>
 

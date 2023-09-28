@@ -18,7 +18,7 @@
         <input
           type="text"
           placeholder="Your Name"
-          class="outline-slate-200 h-11 w-full p-2 text-black"
+          class="h-11 w-full p-2 text-black border border-[#4f4f4f] rounded-xl"
           v-model="inputData"
         />
       </div>
@@ -31,7 +31,7 @@
           No, cancel
         </div>
         <div
-          class="w-40 h-11 flex justify-center items-center bg-[#4f4f4f] rounded-lg text-white cursor-pointer"
+          class="w-40 h-11 flex justify-center items-center bg-[#4f4f4f] hover:bg-[#707070] rounded-lg text-white cursor-pointer"
           @click="showDataInput()"
         >
           OK
